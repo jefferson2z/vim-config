@@ -12,15 +12,19 @@ Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 Plug 'dense-analysis/ale'
 Plug 'airblade/vim-gitgutter'
 Plug 'itchyny/lightline.vim'
-Plug 'joshdick/onedark.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'joshdick/onedark.vim'
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'pangloss/vim-javascript'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'preservim/nerdcommenter'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
+Plug 'sheerun/vim-polyglot'
 call plug#end()
+
+" enable syntax highlighting
+syntax on
 
 " enable mouse support
 set mouse=a
@@ -31,11 +35,10 @@ let g:netrw_browse_split = 3
 
 " lightline
 set noshowmode
-let g:lightline = { 'colorscheme': 'onedark' }
 
 " coc extensions
-let g:coc_global_extensions = ['coc-tsserver',
-  \'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-yank']
+"let g:coc_global_extensions = ['coc-tsserver',
+"  \'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-yank']
 
 " When started as "evim", evim.vim will already have done these settings, bail
 " out.
