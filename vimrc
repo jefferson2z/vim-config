@@ -23,6 +23,11 @@ Plug 'tpope/vim-unimpaired'
 Plug 'sheerun/vim-polyglot'
 call plug#end()
 
+" coc prettier
+"command! -nargs=0 Prettier :CocCommand prettier.formatFile
+"vmap <leader>p  <Plug>(coc-format-selected)
+"nmap <leader>p  <Plug>(coc-format-selected)
+
 " enable syntax highlighting
 syntax on
 
