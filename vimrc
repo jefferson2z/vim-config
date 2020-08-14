@@ -16,6 +16,11 @@ Plug 'joshdick/onedark.vim'
 Plug 'flazz/vim-colorschemes'
 Plug 'morhetz/gruvbox'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc-tsserver'
+Plug 'neoclide/coc-json'
+Plug 'neoclide/coc-html'
+Plug 'neoclide/coc-css'
+Plug 'neoclide/coc-python'
 Plug 'pangloss/vim-javascript'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -29,9 +34,12 @@ Plug 'pangloss/vim-javascript'
 call plug#end()
 
 " coc prettier
-"command! -nargs=0 Prettier :CocCommand prettier.formatFile
-"vmap <leader>p  <Plug>(coc-format-selected)
-"nmap <leader>p  <Plug>(coc-format-selected)
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+vmap <leader>p  <Plug>(coc-format-selected)
+nmap <leader>p  <Plug>(coc-format-selected)
+
+" config ALE
+let g:ale_disable_lsp = 1
 
 " enable syntax highlighting
 syntax on
