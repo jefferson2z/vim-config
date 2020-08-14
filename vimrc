@@ -34,9 +34,9 @@ Plug 'pangloss/vim-javascript'
 call plug#end()
 
 " coc prettier
-command! -nargs=0 Prettier :CocCommand prettier.formatFile
-vmap <leader>p  <Plug>(coc-format-selected)
-nmap <leader>p  <Plug>(coc-format-selected)
+"command! -nargs=0 Prettier :CocCommand prettier.formatFile
+"vmap <leader>p  <Plug>(coc-format-selected)
+"nmap <leader>p  <Plug>(coc-format-selected)
 
 " config ALE
 let g:ale_disable_lsp = 1
