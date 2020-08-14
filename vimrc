@@ -24,12 +24,14 @@ Plug 'preservim/nerdcommenter'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'sheerun/vim-polyglot'
+Plug 'mxw/vim-jsx'
+Plug 'pangloss/vim-javascript'
 call plug#end()
 
 " coc prettier
-command! -nargs=0 Prettier :CocCommand prettier.formatFile
-vmap <leader>p  <Plug>(coc-format-selected)
-nmap <leader>p  <Plug>(coc-format-selected)
+"command! -nargs=0 Prettier :CocCommand prettier.formatFile
+"vmap <leader>p  <Plug>(coc-format-selected)
+"nmap <leader>p  <Plug>(coc-format-selected)
 
 " enable syntax highlighting
 syntax on
