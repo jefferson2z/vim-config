@@ -31,6 +31,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'sheerun/vim-polyglot'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
+"Plug 'jremmen/vim-ripgrep'
 call plug#end()
 
 " change leader key from \ to ,
@@ -176,3 +177,14 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+
+" ALELInter
+" For Javascript use 'eslint' (and only eslint)
+let g:ale_linters = {
+      \ 'javascript':['eslint'],
+      \}
+" Mappings in the style of unimpaired-next
+nmap <silent> [W <Plug>(ale_first)
+nmap <silent> [w <Plug>(ale_previous)
+nmap <silent> ]w <Plug>(ale_next)
+nmap <silent> ]W <Plug>(ale_last)
