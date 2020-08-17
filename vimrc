@@ -8,6 +8,7 @@ endif
 
 call plug#begin()
 Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-fugitive'
 Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 Plug 'dense-analysis/ale'
 Plug 'airblade/vim-gitgutter'
@@ -38,7 +39,8 @@ call plug#end()
 let mapleader=','
 
 " fzf key mapping
-nnoremap <C-p> :<C-u>GFiles<CR>
+nnoremap <leader>f :<C-u>GFiles<CR>
+nnoremap <leader>t :<C-u>Rg<CR>
 
 " coc prettier
 "command! -nargs=0 Prettier :CocCommand prettier.formatFile
