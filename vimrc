@@ -32,11 +32,15 @@ Plug 'tpope/vim-unimpaired'
 Plug 'sheerun/vim-polyglot'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
+Plug 'preservim/nerdtree'
 "Plug 'jremmen/vim-ripgrep'
 call plug#end()
 
 " change leader key from \ to ,
 let mapleader=','
+
+" nerdtree key mapping
+map <leader> :NERDTreeToggle<CR>
 
 " fzf key mapping
 nnoremap <leader>f :<C-u>GFiles<CR>
@@ -114,6 +118,7 @@ augroup END
 " compatible.
 " The ! means the package won't be loaded right away but when plugins are
 " loaded during initialization.
+:filetype plugin on 
 if has('syntax') && has('eval')
   packadd! matchit
 endif
